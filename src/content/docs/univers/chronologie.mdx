@@ -1,0 +1,34 @@
+---
+title: Chronologie
+description: Ligne temporelle interactive des événements majeurs de l'univers Pulsars.
+---
+
+import Timeline from '../../../components/Timeline';
+
+<Timeline client:load events={[
+  {
+    date: "Ère 0 — Origine",
+    title: "Naissance des pulsars artificiels",
+    description: "Première activation d'un moteur à pulsar par la faction Helix. Début de la colonisation interstellaire accélérée."
+  },
+  {
+    date: "Ère 1 — Expansion",
+    title: "Fondation des grandes factions",
+    description: "Helix, les Nomades du Vide et le Conseil de Nova se constituent. Premières tensions autour des ressources énergétiques."
+  },
+  {
+    date: "Ère 2 — Rupture",
+    title: "Guerre des Résonances",
+    description: "Conflit majeur déclenché par la surexploitation des pulsars. Astérion naît pendant cette période."
+  },
+  {
+    date: "Ère 3 — Présent",
+    title: "Arc en cours",
+    description: "Les événements de la série principale. Les factions cherchent un équilibre instable."
+  }
+]} />
+
+## Notes sur la chronologie
+
+{/* Ajouter des événements en étendant le tableau `events` ci-dessus. */}
+{/* Chaque objet : \{ date, title, description \} */}

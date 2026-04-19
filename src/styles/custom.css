@@ -1,0 +1,29 @@
+/* Pulsars — thème personnalisé */
+:root,
+[data-theme='light'] {
+  --sl-color-accent-low:  #1a0a2e;
+  --sl-color-accent:      #7b2ff7;
+  --sl-color-accent-high: #c084fc;
+  --sl-color-white:       #ffffff;
+  --sl-color-gray-1:      #f3e8ff;
+  --sl-color-gray-2:      #e9d5ff;
+  --sl-color-gray-3:      #a78bfa;
+  --sl-color-gray-4:      #7c3aed;
+  --sl-color-gray-5:      #4c1d95;
+  --sl-color-gray-6:      #2e1065;
+  --sl-color-black:       #0d0120;
+}
+
+[data-theme='dark'] {
+  --sl-color-accent-low:  #2e1065;
+  --sl-color-accent:      #a855f7;
+  --sl-color-accent-high: #e879f9;
+  --sl-color-white:       #f3e8ff;
+  --sl-color-gray-1:      #1e0a3c;
+  --sl-color-gray-2:      #2d1057;
+  --sl-color-gray-3:      #4c1d95;
+  --sl-color-gray-4:      #7c3aed;
+  --sl-color-gray-5:      #a78bfa;
+  --sl-color-gray-6:      #c4b5fd;
+  --sl-color-black:       #0a0118;
+}

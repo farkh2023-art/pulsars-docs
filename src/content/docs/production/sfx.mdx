@@ -1,0 +1,39 @@
+---
+title: Sound Design & SFX
+description: Bibliothèque sonore et conventions SFX pour Pulsars.
+---
+
+import AudioPlayer from '../../../components/AudioPlayer';
+
+## Palette sonore
+
+L'univers Pulsars combine des textures synthétiques froides (moteurs, IA) avec des percussions organiques pour les personnages.
+
+## Bibliothèque SFX
+
+### Propulsion
+
+<AudioPlayer src="/sfx/moteur_pulsar_court.wav" label="Moteur pulsar — court" />
+<AudioPlayer src="/sfx/moteur_pulsar_long.wav" label="Moteur pulsar — long" />
+
+### Armement
+
+<AudioPlayer src="/sfx/tir_energie.wav" label="Tir énergie" />
+
+### Ambiance
+
+<AudioPlayer src="/sfx/espace_ambiance.wav" label="Ambiance espace profond" />
+
+> **Note :** Dépose tes fichiers audio dans `public/sfx/` pour les rendre accessibles.
+> Format recommandé : `.wav` pour la qualité, `.mp3` pour le web.
+
+## Conventions de nommage
+
+```
+sfx_[catégorie]_[description]_[variante].wav
+
+Exemples :
+  sfx_moteur_pulsar_court.wav
+  sfx_arme_tir_energie_v2.wav
+  sfx_ambiance_espace_loop.wav
+```

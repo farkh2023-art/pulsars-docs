@@ -1,0 +1,38 @@
+---
+title: Pulsars — Documentation
+description: L'univers créatif Pulsars — lore, personnages, production, scripts.
+template: splash
+hero:
+  tagline: Bienvenue dans l'univers Pulsars
+  actions:
+    - text: Univers & Lore
+      link: /univers/intro/
+      icon: right-arrow
+    - text: Personnages
+      link: /personnages/asterion/
+      icon: right-arrow
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="Univers" icon="star">
+    Histoire, chronologie, races, technologies et lieux de l'univers Pulsars.
+  </Card>
+  <Card title="Personnages" icon="person">
+    Fiches détaillées, arcs narratifs et feuilles de design.
+  </Card>
+  <Card title="Production" icon="rocket">
+    Pipeline créatif : storyboard, animatic, SFX, montage.
+  </Card>
+  <Card title="Bible graphique" icon="pencil">
+    Palettes, typographies, règles de composition et styles d'animation.
+  </Card>
+  <Card title="BD" icon="document">
+    Style graphique et planches pour le format bande dessinée.
+  </Card>
+  <Card title="Scripts" icon="open-book">
+    Scènes, variations de dialogues et punchlines.
+  </Card>
+</CardGrid>
