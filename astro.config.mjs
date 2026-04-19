@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 import react from '@astrojs/react';
 
 export default defineConfig({
-    site: 'https://TON_USERNAME.github.io',
+    site: 'https://farkh2023-art.github.io',
     base: '/pulsars-docs',
     integrations: [
         starlight({
