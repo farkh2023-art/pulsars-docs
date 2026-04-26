@@ -22,21 +22,14 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '22'
           cache: npm
 
       - name: Install dependencies
         run: npm install
 
       - name: Build Astro site
-        run: npm run build 2>&1 | tee build-output.txt; exit ${PIPESTATUS[0]}
-
-      - name: Upload build log on failure
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-log
-          path: build-output.txt
+        run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
