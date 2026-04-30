@@ -10,6 +10,14 @@ export default defineConfig({
         starlight({
             title: 'Pulsars Docs',
             customCss: ['./src/styles/custom.css'],
+            // Configuration de la langue en français
+            defaultLocale: 'fr',
+            locales: {
+                root: {
+                    label: 'Français',
+                    lang: 'fr',
+                },
+            },
             sidebar: [
                 {
                     label: 'Introduction',

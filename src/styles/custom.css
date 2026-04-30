@@ -27,3 +27,164 @@
   --sl-color-gray-6:      #c4b5fd;
   --sl-color-black:       #0a0118;
 }
+
+/* Amélioration du contraste pour la sidebar et les titres */
+.sidebar .sidebar-section-title {
+  color: var(--sl-color-accent-high);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+}
+
+/* Amélioration du contraste pour les liens de sidebar */
+.sidebar a {
+  color: var(--sl-color-gray-1);
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  color: var(--sl-color-accent-high);
+}
+
+/* Amélioration du contraste pour les titres h2 et h3 */
+.content h2 {
+  color: var(--sl-color-accent-high);
+  font-weight: 700;
+  border-bottom: 2px solid var(--sl-color-accent);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.content h3 {
+  color: var(--sl-color-accent);
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+/* Amélioration du contraste pour les tableaux */
+table {
+  border-color: var(--sl-color-accent);
+}
+
+table th {
+  background-color: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high);
+  font-weight: 600;
+}
+
+table td {
+  border-color: var(--sl-color-gray-4);
+}
+
+/* -------------------------------------------------------
+Recherche Starlight / Pagefind — lisibilité renforcée
+------------------------------------------------------- */
+.pagefind-ui,
+.pagefind-ui__drawer,
+.pagefind-ui__results-area {
+  color: var(--sl-color-text);
+}
+
+.pagefind-ui__result {
+  background: var(--sl-color-bg);
+  border: 1px solid var(--sl-color-accent);
+  border-radius: 0.75rem;
+  margin-block: 0.75rem;
+  overflow: hidden;
+}
+
+.pagefind-ui__result:hover,
+.pagefind-ui__result:focus-within {
+  border-color: var(--sl-color-accent-high);
+  box-shadow: 0 0 0 1px var(--sl-color-accent-high);
+}
+
+.pagefind-ui__result-title,
+.pagefind-ui__result-title a,
+.pagefind-ui__result-link {
+  color: var(--sl-color-white) !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pagefind-ui__result-title a:hover,
+.pagefind-ui__result-link:hover {
+  color: var(--sl-color-accent-high) !important;
+  text-decoration: underline;
+}
+
+.pagefind-ui__result-excerpt,
+.pagefind-ui__result-nested,
+.pagefind-ui__result-inner,
+.pagefind-ui__result mark {
+  color: var(--sl-color-gray-1) !important;
+}
+
+.pagefind-ui__result-excerpt {
+  opacity: 1;
+  line-height: 1.65;
+}
+
+.pagefind-ui__result mark {
+  background: var(--sl-color-accent);
+  border-radius: 0.25rem;
+  padding-inline: 0.15rem;
+  font-weight: 700;
+}
+
+.pagefind-ui__message {
+  color: var(--sl-color-text);
+  font-weight: 600;
+}
+
+.pagefind-ui__search-input {
+  color: var(--sl-color-white);
+  background-color: var(--sl-color-bg-nav);
+  border-color: var(--sl-color-accent);
+}
+
+.pagefind-ui__search-input::placeholder {
+  color: var(--sl-color-gray-2);
+}
+
+.pagefind-ui__button {
+  color: var(--sl-color-white);
+  border-color: var(--sl-color-accent);
+}
+
+.pagefind-ui__button:hover,
+.pagefind-ui__button:focus-visible {
+  border-color: var(--sl-color-accent-high);
+  box-shadow: 0 0 0 2px var(--sl-color-accent-high);
+}
+
+/* Amélioration mobile de la fenêtre de recherche */
+@media (max-width: 640px) {
+  .pagefind-ui__result {
+    border-radius: 0.6rem;
+    margin-block: 0.6rem;
+  }
+
+  .pagefind-ui__result-title,
+  .pagefind-ui__result-title a,
+  .pagefind-ui__result-link {
+    font-size: 1rem;
+  }
+
+  .pagefind-ui__result-excerpt {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content h3 {
+    font-size: 1.25rem;
+  }
+}

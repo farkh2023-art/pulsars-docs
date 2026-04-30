@@ -1,0 +1,173 @@
+---
+title: "PIOUPIOU — le pigeon pas comme les autres"
+description: Fiche personnage — Pioupiou, un pigeon atypique avec des capacités uniques.
+---
+
+import CharacterCard from '../../../components/CharacterCard';
+import Timeline from '../../../components/Timeline';
+import AudioPlayer from '../../../components/AudioPlayer';
+import PromptCard from '../../../components/PromptCard';
+import ProductionTabs from '../../../components/ProductionTabs';
+
+<CharacterCard
+  client:load
+  name="Pioupiou"
+  role="Personnage secondaire"
+  faction="Cité des Oiseaux"
+  description="Un pigeon ordinaire à première vue, mais doté d'une intelligence exceptionnelle et d'une capacité à comprendre les langages complexes. Il est devenu un messager informel entre les différentes factions de l'univers Pulsars."
+/>
+
+## Identité narrative
+
+| Champ | Valeur |
+|---|---|
+| Nom | Pioupiou |
+| Rôle | Personnage secondaire |
+| Faction | Cité des Oiseaux |
+| Première apparition | Ère 3 — Arc 2, Épisode 4 |
+| Capacité spéciale | Communication inter-espèces |
+
+## Apparence visuelle
+
+Pioupiou ressemble à un pigeon urbain classique avec des plumes grises et des reflets irisés, mais ses yeux révèlent une intelligence inhabituelle. Il porte souvent un petit collier avec une capsule contenant des messages secrets.
+
+## Chronologie
+
+<Timeline client:load events={[
+  {
+    date: "Ère 3 — Arc 2, Épisode 4",
+    title: "Première rencontre",
+    description: "Pioupiou fait sa première apparition lors d'une mission de reconnaissance des Nomades du Vide, où il aide Astérion à éviter un piège."
+  },
+  {
+    date: "Ère 3 — Arc 2, Épisode 7",
+    title: "Alliance informelle",
+    description: "Il établit un réseau de communication informel entre les factions, utilisant son statut de pigeon ordinaire pour passer inaperçu."
+  },
+  {
+    date: "Ère 3 — Arc 3, Épisode 2",
+    title: "Mission critique",
+    description: "Transporte un message vital qui change le cours de la guerre, prouvant sa loyauté et son importance stratégique."
+  },
+  {
+    date: "Ère 3 — Arc 3, Épisode 5",
+    title: "Révélation",
+    description: "Son origine est révélée : il a été modifié par des scientifiques de Helix pour servir d'espion, mais a développé sa propre conscience."
+  },
+  {
+    date: "Ère 3 — Arc 4, Épisode 1",
+    title: "Nouveau rôle",
+    description: "Après la guerre, il devient un ambassadeur officiel entre les espèces, utilisant sa capacité unique pour favoriser la paix."
+  }
+]} />
+
+## Utilisation en production
+
+<ProductionTabs client:load tabs={[
+  {
+    id: "animation",
+    label: "Animation",
+    icon: "🎬",
+    content: [
+      {
+        title: "Animation principale",
+        items: [
+          "Mouvements fluides et expressifs, avec des micro-expressions pour communiquer ses émotions",
+          "Vols cinématiques, séquences de messagerie, moments de tension"
+        ]
+      },
+      {
+        title: "Scènes clés",
+        items: [
+          "Approche furtive lors des missions de livraison",
+          "Réactions expressives face aux personnages principaux"
+        ]
+      }
+    ]
+  },
+  {
+    id: "bd",
+    label: "Bande dessinée",
+    icon: "📖",
+    content: [
+      {
+        title: "Style graphique",
+        items: [
+          "Détails fins dans les expressions, utilisation de bulles de dialogue créatives pour ses communications",
+          "Mises en page dynamiques montrant ses déplacements urbains"
+        ]
+      }
+    ]
+  },
+  {
+    id: "tiktok",
+    label: "TikTok",
+    icon: "📱",
+    content: [
+      {
+        title: "Formats recommandés",
+        items: [
+          "<strong>15s</strong> — Shorts comiques",
+          "<strong>30s</strong> — Teasers d'épisodes",
+          "<strong>60s</strong> — Moments mémorables"
+        ]
+      },
+      {
+        title: "Accroches",
+        items: [
+          "Clips de ses interventions les plus drôles ou épiques"
+        ]
+      }
+    ]
+  },
+  {
+    id: "storyboard",
+    label: "Storyboard",
+    icon: "✏️",
+    content: [
+      {
+        title: "Séquences types",
+        items: [
+          "Approche furtive",
+          "Livraison de messages",
+          "Réactions émotionnelles"
+        ]
+      },
+      {
+        title: "Angles de caméra",
+        items: [
+          "Plans rapprochés sur les expressions",
+          "Vues en plongée pour les scènes de vol"
+        ]
+      }
+    ]
+  }
+]} />
+
+## Thème musical
+
+<AudioPlayer src="/audio/pioupiou-theme.mp3" label="Thème musical de Pioupiou" />
+
+## Prompts visuels
+
+<PromptCard
+  client:load
+  label="Prompt 1 — Portrait"
+  prompt="Un pigeon urbain avec des plumes grises irisées, des yeux intelligents et expressifs, portant un petit collier avec une capsule contenant des messages secrets. Style animation 2D, éclairage doux, arrière-plan urbain futuriste."
+/>
+
+<PromptCard
+  client:load
+  label="Prompt 2 — Scène d'action"
+  prompt="Pioupiou en plein vol au-dessus d'une ville futuriste, transportant un message urgent. Mouvement dynamique, perspective en plongée, éclairage dramatique, style animation 2D avec des effets de vitesse."
+/>
+
+<PromptCard
+  client:load
+  label="Prompt 3 — Moment émotionnel"
+  prompt="Pioupiou assis sur un rebord de fenêtre, regardant vers l'horizon, expression mélancolique mais déterminée. Coucher de soleil sur fond de ville futuriste, éclairage chaud, style animation 2D."
+/>
+
+## Conclusion narrative
+
+Pioupiou représente l'idée que même les êtres les plus ordinaires peuvent avoir un impact extraordinaire sur le monde qui les entoure. Son parcours d'espèce modifiée à messager de paix illustre les thèmes centraux de l'univers Pulsars : la recherche d'identité, la liberté de choix et la capacité de créer des ponts entre des mondes différents.
