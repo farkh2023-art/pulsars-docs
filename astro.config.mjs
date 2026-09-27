@@ -4,8 +4,10 @@ import starlight from '@astrojs/starlight';
 import react from '@astrojs/react';
 
 export default defineConfig({
-    site: 'https://farkh2023-art.github.io',
-    base: '/pulsars-docs',
+    server: {
+        host: '0.0.0.0',
+        port: 3000,
+    },
     integrations: [
         starlight({
             title: 'Pulsars Docs',
